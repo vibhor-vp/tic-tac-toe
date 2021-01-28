@@ -1,0 +1,46 @@
+.game_container{
+    text-align: center;
+}
+
+.heading_cont{
+    position: relative;
+    display: inline-block;
+}
+
+.ttt_container{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: black;
+    display: inline-block;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    max-width: 240px;
+    flex-wrap: wrap;
+  }
+  
+  .ttt_box {
+    border: 10px solid;
+    /* padding: 10px; */
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    background-color: grey;
+    border-radius: 15px;
+    position: relative;
+  }
+
+  .ttt_text{
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 70px;
+  }
+
+  .ttt_text_dup{
+    font-size: 70px;
+  }
+  

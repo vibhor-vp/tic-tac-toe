@@ -1,0 +1,14 @@
+<div class="game_container">
+  <div class="heading">
+    <div class="heading_cont">
+      <h3>It's <span class="ttt_text_dup" [ngStyle]="{'color': currentPlayerTurn?.tttSymbolObj?.color}">{{currentPlayerTurn?.tttSymbolObj?.value}}</span> turn</h3>
+    </div>
+  </div>
+  <div class="ttt_container">
+    <div class="row">
+      <div *ngFor="let tt_box of ticTacArr; let j=index" class="ttt_box" (click)="ttBoxClick(j)">
+        <div class="ttt_text" [ngStyle]="{'color': tt_box?.color}">{{tt_box?.value}}</div>
+      </div>
+    </div>
+  </div>
+</div>
